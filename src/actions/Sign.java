@@ -2,7 +2,7 @@ package actions;
 
 import java.util.UUID;
 
-public class Sign {
+public class Sign implements IAction {
     private String source;
     private UUID documentId;
 

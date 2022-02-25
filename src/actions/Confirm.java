@@ -1,6 +1,6 @@
 package actions;
 
-public class Confirm {
+public class Confirm implements IAction {
     private String source;
     private String paymentNumber;
 

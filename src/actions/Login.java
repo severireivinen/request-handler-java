@@ -1,6 +1,6 @@
 package actions;
 
-public class Login {
+public class Login implements IAction {
     private String source;
 
     public Login(String source) {

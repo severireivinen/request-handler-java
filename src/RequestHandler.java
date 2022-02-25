@@ -1,4 +1,5 @@
 import actions.Confirm;
+import actions.IAction;
 import actions.Login;
 import actions.Sign;
 
@@ -19,7 +20,7 @@ public class RequestHandler {
         this.uri = new URI(uri);
     }
 
-    public Object handleUri() throws Exception {
+    public IAction handleUri() throws Exception {
         String scheme = uri.getScheme();
         String action = uri.getAuthority();
         String[] parameters = uri.getQuery().split("&");
